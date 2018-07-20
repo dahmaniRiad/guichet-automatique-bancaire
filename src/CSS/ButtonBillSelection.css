@@ -1,0 +1,21 @@
+.button{
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-color: #268b5a;
+    -fx-background-radius: 26;
+    -fx-text-fill: white ;
+    -fx-pref-width: 45;
+    -fx-pref-height: 45;
+}
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-font-size: 20;
+    -fx-pref-width: 45;
+    -fx-pref-height: 45;
+    -fx-background-radius: 35;
+    -fx-text-fill: #268b5a;
+    -fx-border-color: #268b5a;
+    -fx-border-radius: 35;
+    -fx-border-width: 3;
+}.b

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="BpAutre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1000" style="-fx-background-color: #00cc99;" stylesheets="@CSS/Button.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AutreMontantsController">
+   <top>
+      <Label text="Entrez le Montant" BorderPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="System Bold" size="53.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="200.0" left="200.0" right="200.0" top="200.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <TextField fx:id="valeurEntrer" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="BOTTOM_CENTER">
+         <BorderPane.margin>
+            <Insets bottom="150.0" left="150.0" right="150.0" top="150.0" />
+         </BorderPane.margin>
+      </TextField>
+   </center>
+   <left>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AnnulerClicked" prefHeight="48.0" prefWidth="115.0" text="Annuler" BorderPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </left>
+   <right>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#valideClicked" prefHeight="48.0" prefWidth="115.0" text="Valider" BorderPane.alignment="BOTTOM_CENTER">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </Button>
+   </right>
+</BorderPane>

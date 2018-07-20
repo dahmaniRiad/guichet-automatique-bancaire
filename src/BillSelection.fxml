@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="BpBillSelection" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1000" style="-fx-background-color: #00cc99;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BillSelectionController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <Button fx:id="plus10" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins10" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </right>
+               <bottom>
+                  <Label fx:id="label10" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/10.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <Label fx:id="label20" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/20.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Button fx:id="plus20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </right>
+               <VBox.margin>
+                  <Insets top="5.25" />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <Label fx:id="label50" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/50.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Button fx:id="plus50" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins50" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </right>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AnnulerClicked" prefHeight="50.0" prefWidth="120.0" stylesheets="@CSS/Button.css" text="Annuler" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+               </center>
+            </BorderPane>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.5" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <left>
+                  <Button fx:id="plus100" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins100" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Button>
+               </right>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/100.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Label fx:id="label100" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <Label fx:id="label200" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/200.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Button fx:id="plus200" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins200" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Button>
+               </right>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <Label fx:id="label500" text="× 0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Label>
+               </bottom>
+               <center>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@pictures/500.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <left>
+                  <Button fx:id="plus500" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializeplus" stylesheets="@CSS/ButtonBillSelection.css" text="+" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font>
+                  </Button>
+               </left>
+               <right>
+                  <Button fx:id="moins500" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#initializemoins" prefHeight="42.0" prefWidth="42.0" stylesheets="@CSS/ButtonBillSelection.css" text="-" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="22.0" />
+                     </font></Button>
+               </right>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ValiderClicked" prefHeight="50.0" prefWidth="120.0" stylesheets="@CSS/Button.css" text="Valider" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="23.0" />
+                     </font></Button>
+               </center>
+            </BorderPane>
+         </children>
+      </VBox>
+   </right>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+   </padding>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

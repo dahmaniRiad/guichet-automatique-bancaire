@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="BpDrag" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #00cc99;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CardDragController">
+   <top>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@pictures/LOGOImpression.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+   <center>
+      <TextFlow maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="1000.0" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="N'oublie pas de Retirer votre carte ">
+               <font>
+                  <Font size="41.0" />
+               </font>
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
+            </Label>
+            <Label text="RADA Banque vous remercie pour votre visite">
+               <font>
+                  <Font name="Arial Black" size="38.0" />
+               </font>
+            </Label>
+            <Label text="BYE ;)">
+               <font>
+                  <Font name="Arial Black" size="42.0" />
+               </font>
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+            </Label>
+         </children>
+      </TextFlow>
+   </center>
+</BorderPane>

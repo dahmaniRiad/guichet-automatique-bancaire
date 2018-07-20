@@ -1,0 +1,11 @@
+
+.table-row-cell:odd{
+    -fx-background-color:#00e6b0 ;
+    -fx-color:#FFFFFF;
+    -fx-text-alignment: center;
+
+}
+.table-row-cell:even{
+    -fx-color:#00e6b0;
+    -fx-text-alignment: center;
+}
